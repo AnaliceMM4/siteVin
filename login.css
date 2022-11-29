@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* body {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f3f3;
+} */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    background: #ffffff;
+    color: #945252;
+}
+
+@media screen and (max-width:1050px) {
+    .container {
+        grid-gap: 5rem;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    /* height: 100vh; */
+}
+
+.wine {
+    /* position: fixed; */
+    width: 50%;
+    /* height: 100%; */
+    /* left: 0;
+    bottom: 0; */
+    /* z-index: -1; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 35rem;
+    /* height: 100rem; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.login-container {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;   
+    background:#f3f3f3;
+    /* box-sizing: border-box; */
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: .5rem;
+    margin: .5rem;
+}
+
+
+form h2 {
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    /* margin: .5rem 0; */
+    color: rgb(0, 0, 0);
+}
+
+.image {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: 1rem;
+}
+
+.user-box {
+    position: relative;
+    /* padding-left:1rem; */
+    padding: 0 1.2rem;
+}
+
+.user-box input {
+    width: 100%;
+    /* padding: 1rem; */
+    padding-top: 1.2rem;
+    /* font-size: 1rem; */
+    margin-bottom: 1rem;
+    border: none;
+    border-bottom: 2px solid rgb(105, 105, 105);
+    outline: none;
+    background: transparent;
+}
+
+.user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1.2rem;
+    font-size: 1rem;
+    color: #050505;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.box-cbm{
+    font-size: .9rem;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.box-cbm .form-label{
+    color: #050505;
+    font-size: 1rem;
+    padding-right: .5rem;
+}
+
+.box-cbm .form-check {
+    padding-left: 1.5rem;
+
+}
+/* .box-cbm input[type="radio"]:active{
+    background-color: rgb(63, 3, 3);
+    color: rgb(105, 2, 2);
+} */
+
+.user-box input:focus~label,
+.user-box input:valid~label {
+    top: -1.2rem;
+    left: 0;
+    color: rgb(105, 2, 2);
+    font-size: .8rem;
+    font-weight: bolder;
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover{
+    border-bottom: 2px solid rgb(61, 0, 0);
+    outline: none;
+    background: transparent;
+}
+
+form input[type="submit"] {
+    /* position: relative;
+    display: inline-block; */
+    padding: .5rem;
+    margin: 1rem;
+    color: #141414;
+    border-top:rgb(61, 0, 0);
+    font-size: .8rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    /* overflow: hidden; */
+    transition: .5s;
+    border-radius: 2rem;
+    letter-spacing: .2rem;
+}
+
+input[type="submit"]:hover {
+    background: #330c0c;
+    color: #fff;
+    border-radius: 3rem;
+}
+
+.nav-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    height: .5rem;
+    width: 1rem;
+    text-align: center;
+}
+
+#tab-register{
+    /* padding: .5rem; */
+    color: #000000;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: .5s;
+    border-radius: 2rem;
+    margin: 1rem;
+}
+
+#tab-register:hover{
+    color: #610101;
+}
+
+.form .invalid {
+    border: 1px solid red;
+}
+.erromsg span {
+    color: #F00;
+}
+
+.invalid:focus {
+    box-shadow: 0 0 0 0.2rem #db0a0a40;
+}
+.valid:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 180, 24, 0.25);
+}
+
+.erro{
+    color: #F00;
+}
