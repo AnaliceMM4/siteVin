@@ -1,6 +1,6 @@
 import { headerComponent } from "./components/header.js";
 import { footerComponent } from "./components/footer.js";
-import { mainComponent } from "./components/index.js";
+// import { mainComponent } from "./components/index.js";
 
 window.onload = function () {
     const appHeader = document.getElementById("appHeader");
@@ -9,7 +9,7 @@ window.onload = function () {
     const appFooter = document.getElementById("appFooter");
     appFooter.innerHTML = footerComponent();
 
-    const appMain = document.getElementById("appMain");
-    appMain.innerHTML = mainComponent();
+    // const appMain = document.getElementById("appMain");
+    // appMain.innerHTML = mainComponent();
 
 }

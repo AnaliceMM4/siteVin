@@ -1,16 +1,12 @@
 export const headerComponent = () => `
 <nav class="navbar navbar-expand-lg grow-1 fixed-top">
-<a class="navbar-brand mx-4 mt-lg-0" href="#">
+<a class="navbar-brand mx-4 mt-lg-0" href="index.html">
     <img src="images/logo-mini.png" alt="">
     <!-- <span>Encante Vin</span> -->
 </a>
 
-<button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#barraNav">
-    <span class="navbar-toggler-icon"></span>
-</button>
 <div class="collapse navbar-collapse" id="barraNav">
     <ul class="navbar-nav mx-auto mb-2">
-        <!-- mb-2 -->
         <li class="nav-item dropdown dropdown-hover position-static">
             <a class="nav-link dropdown-toggle hidden-arrow" href="#vinhos" id="navbarDropdown" role="button"
                 data-mdb-toggle="dropdown" aria-expanded="false">Vinhos</a>
@@ -24,16 +20,14 @@ export const headerComponent = () => `
                             <div class="list-group list-group-flush">
                                 <h5>
                                     <img src="images/vinho.png" alt="" class="pe-1">
-
                                     Por tipo
                                 </h5>
-                                <a href="" class="list-group-item list-group-item-action">Tintos</a>
-                                <a href="" class="list-group-item list-group-item-action">Brancos</a>
-                                <a href="" class="list-group-item list-group-item-action">Espumantes</a>
-                                <a href="" class="list-group-item list-group-item-action">Frisantes</a>
-                                <a href="" class="list-group-item list-group-item-action">Rosés</a>
-                                <a href="" class="list-group-item list-group-item-action">Licorosos</a>
-
+                                    <a href="" class="list-group-item list-group-item-action">Tintos</a>
+                                    <a href="" class="list-group-item list-group-item-action">Brancos</a>
+                                    <a href="" class="list-group-item list-group-item-action">Espumantes</a>
+                                    <a href="" class="list-group-item list-group-item-action">Frisantes</a>                                
+                                    <a href="" class="list-group-item list-group-item-action">Rosés</a>
+                                    <a href="" class="list-group-item list-group-item-action">Licorosos</a>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
@@ -102,23 +96,31 @@ export const headerComponent = () => `
     </ul>
 
     <div class="d-flex align-items-center mx-4">
-        <a class="text-reset me-4" href="#">
-            <i class="fas fa-search"></i>
-        </a>
+    
+        <div class="search-box">
+        <button class="btn-search text-reset me-4""><i class="fas fa-search"></i></button>
+        <input type="text" class="input-search" placeholder="Procurando...">
+        </div>
 
         <div class="dropdown">
-            <a class="text-reset me-4 dropdown-toggle hidden-arrow" href="#" id="#modal-cadastro">
+            <a class="text-reset me-4 dropdown-toggle hidden-arrow"  href="login-cadastro.html" id="#modal-cadastro">
                 <i class="fas fa-user"></i>
             </a>
         </div>
 
         <div class="dropdown">
-            <a class="text-reset me-4" href="#">
+            <a class="text-reset me-4" href="#" id="btProdutos" data-toggle="modal"
+            data-target="#modal-carrinho">
                 <i class="fas fa-shopping-cart"></i>
                 <span class="badge rounded-pill badge-notification bg-danger">1</span>
             </a>
         </div>
     </div>
+</div>
+<div class="menu-responsivo">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
 </div>
 </nav>
 `;
